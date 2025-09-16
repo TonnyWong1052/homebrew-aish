@@ -9,14 +9,14 @@ class Aish < Formula
   desc "AI shell helper"
   homepage "https://github.com/TonnyWong1052/aish"
   url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "13746767aafe9949a89ea1b7212ef43ed1da336878ea27702052518dfda32bc4"
+  sha256 "3238c399e3f3a3d46975e5338e96f22102afacc5e5a19d6796659c243245681a"
   license "MIT"
 
   depends_on "go" => :build
 
   def install
     # The build command is derived from scripts/install.sh
-    system "go", "build", "-o", "aish", "powerful-cli/cmd/aish"
+    system "go", "build", "-o", "aish", "./cmd/aish/main.go"
     bin.install "aish"
   end
 
