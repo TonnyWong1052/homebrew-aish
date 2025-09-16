@@ -16,6 +16,7 @@ class Aish < Formula
 
   def install
     # The build command is derived from scripts/install.sh
+    system "ls", "-R"
     system "go", "build", "-o", "aish", "./cmd/aish/main.go"
     bin.install "aish"
   end
