@@ -8,8 +8,8 @@
 class Aish < Formula
   desc "AI shell helper"
   homepage "https://github.com/TonnyWong1052/aish"
-  url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "2411d8b24b7a691ba417893a3267009d538c2de146b6d479c247c453d3d7b4ff"
+  url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.1.tar.gz"
+  sha256 "13746767aafe9949a89ea1b7212ef43ed1da336878ea27702052518dfda32bc4"
   license "MIT"
 
   depends_on "go" => :build
