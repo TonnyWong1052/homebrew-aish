@@ -7,9 +7,9 @@
 #
 class Aish < Formula
   desc "AI shell helper"
-  homepage "https://github.com/leung-tom/Powerful-CLI"
-  url "https://github.com/leung-tom/Powerful-CLI/archive/refs/tags/v0.0.1.tar.gz" # IMPORTANT: This is a placeholder URL. You will need to update it.
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000" # IMPORTANT: This is a placeholder checksum. You will need to update it.
+  homepage "https://github.com/TonnyWong1052/aish"
+  url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.1.tar.gz"
+  sha256 "23695ab73dec0a2801669c46af1a0094c3ffa1c557cde0f81dea4dc02240d6e7"
   license "MIT"
 
   depends_on "go" => :build
