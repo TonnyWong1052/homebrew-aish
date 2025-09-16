@@ -8,9 +8,9 @@
 class Aish < Formula
   desc "AI shell helper"
   homepage "https://github.com/TonnyWong1052/aish"
-  url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.4.tar.gz"
-  sha256 "148d1fe62a2ea5fdb2b333b0da98936c0847209e7d40a562e9e9d23978a41b43"
-  version "0.0.4"
+  url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.1.tar.gz"
+  sha256 "004ed86c29cb33a4e00f7d9bf9ee3561bb2e8f079f66a97cc533ae43b7f887b8"
+  version "0.0.1"
   license "MIT"
 
   depends_on "go" => :build
@@ -29,6 +29,6 @@ class Aish < Formula
   test do
     # This test is basic and just checks if the binary can be executed.
     # You might want to add a more comprehensive test here.
-    assert_match "aish v0.0.4", shell_output("#{bin}/aish --version")
+    assert_match "aish v0.0.1", shell_output("#{bin}/aish --version")
   end
 end
