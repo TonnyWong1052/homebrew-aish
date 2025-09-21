@@ -9,7 +9,8 @@ class Aish < Formula
   desc "AI shell helper"
   homepage "https://github.com/TonnyWong1052/aish"
   url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "1fad17600f1b11d6ffd07dafe73f37dec09586f00b8d3370472c73ab9262b9d4"
+  # 對齊目前 GitHub tag 壓縮包的實際校驗值，修復 Homebrew 安裝失敗
+  sha256 "004ed86c29cb33a4e00f7d9bf9ee3561bb2e8f079f66a97cc533ae43b7f887b8"
   version "0.0.1"
   license "MIT"
 
