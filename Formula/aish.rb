@@ -9,7 +9,7 @@ class Aish < Formula
   desc "AI shell helper"
   homepage "https://github.com/TonnyWong1052/aish"
   url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "f3e6407c28d6a01f479aa759ff3915319e26fc01bc7036eedcdb014fe5805f3f"
+  sha256 "1361372fd9a72a171b28d91b32dc4eaf13d82a9161e1ab585d790d3f8857e619"
   version "0.0.2"
   license "MIT"
 
