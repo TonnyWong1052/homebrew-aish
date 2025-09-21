@@ -10,7 +10,7 @@ class Aish < Formula
   homepage "https://github.com/TonnyWong1052/aish"
   url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.1.tar.gz"
   # 對齊目前 GitHub tag 壓縮包的實際校驗值，修復 Homebrew 安裝失敗
-  sha256 "b4d923f8123c6e9f369a4aea4fed616e9e14dd38c690dd875273c5dbb46bae5d"
+  sha256 "c3e3c8edebfebbc79c0b0ea76afbae63a02f430e370b0d9037e8205c102bf998"
   version "0.0.1"
   license "MIT"
 
