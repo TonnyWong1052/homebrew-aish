@@ -9,7 +9,7 @@ class Aish < Formula
   desc "AI shell helper"
   homepage "https://github.com/TonnyWong1052/aish"
   url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "2411d8b24b7a691ba417893a3267009d538c2de146b6d479c247c453d3d7b4ff"
+  sha256 "f3e6407c28d6a01f479aa759ff3915319e26fc01bc7036eedcdb014fe5805f3f"
   version "0.0.2"
   license "MIT"
 
@@ -17,7 +17,7 @@ class Aish < Formula
 
   def install
     # 透過 ldflags 注入版本字串，確保 `aish --version` 與公式 version 一致
-    ldflags = "-s -w -X main._version=v\#{version}"
+    ldflags = "-s -w -X main._version=v#{version}"
     system "go", "build", *std_go_args(ldflags: ldflags, output: bin/"aish"), "./cmd/aish"
   end
 
