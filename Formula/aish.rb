@@ -8,15 +8,17 @@
 class Aish < Formula
   desc "AI shell helper"
   homepage "https://github.com/TonnyWong1052/aish"
-  url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "004ed86c29cb33a4e00f7d9bf9ee3561bb2e8f079f66a97cc533ae43b7f887b8"
-  version "0.0.1"
+  url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "2411d8b24b7a691ba417893a3267009d538c2de146b6d479c247c453d3d7b4ff"
+  version "0.0.2"
   license "MIT"
 
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(output: bin/"aish"), "./cmd/aish"
+    # 透過 ldflags 注入版本字串，確保 `aish --version` 與公式 version 一致
+    ldflags = "-s -w -X main._version=v\#{version}"
+    system "go", "build", *std_go_args(ldflags: ldflags, output: bin/"aish"), "./cmd/aish"
   end
 
   def caveats
@@ -29,6 +31,6 @@ class Aish < Formula
   test do
     # This test is basic and just checks if the binary can be executed.
     # You might want to add a more comprehensive test here.
-    assert_match "aish v0.0.1", shell_output("#{bin}/aish --version")
+    assert_match "aish v0.0.2", shell_output("#{bin}/aish --version")
   end
 end
