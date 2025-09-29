@@ -8,10 +8,10 @@
 class Aish < Formula
   desc "AI shell helper"
   homepage "https://github.com/TonnyWong1052/aish"
-  url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.1.tar.gz"
-  # 對齊 v0.0.1 GitHub tag 壓縮包的實際校驗值
-  sha256 "c3e3c8edebfebbc79c0b0ea76afbae63a02f430e370b0d9037e8205c102bf998"
-  version "0.0.1"
+  url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.2.tar.gz"
+  # 對齊 v0.0.2 GitHub tag 壓縮包的實際校驗值
+  sha256 "5077202726d84dfd1a3b6e4f22c2c98fa8e81aae9c02dd9611592ceb2c1cd67a"
+  version "0.0.2"
   license "MIT"
 
   depends_on "go" => :build
@@ -32,6 +32,6 @@ class Aish < Formula
   test do
     # This test is basic and just checks if the binary can be executed.
     # You might want to add a more comprehensive test here.
-    assert_match "aish v0.0.1", shell_output("#{bin}/aish --version")
+    assert_match "aish v0.0.2", shell_output("#{bin}/aish version")
   end
 end
