@@ -10,7 +10,7 @@ class Aish < Formula
   homepage "https://github.com/TonnyWong1052/aish"
   url "https://github.com/TonnyWong1052/aish/archive/refs/tags/v0.0.1.tar.gz"
   # 對齊 v0.0.1 GitHub tag 壓縮包的實際校驗值
-  sha256 "1fad17600f1b11d6ffd07dafe73f37dec09586f00b8d3370472c73ab9262b9d4"
+  sha256 "c3e3c8edebfebbc79c0b0ea76afbae63a02f430e370b0d9037e8205c102bf998"
   version "0.0.1"
   license "MIT"
 
